@@ -50,7 +50,7 @@ def ycbcr2rgb(image): # YCbCr to RGB colourspace
     np.putmask(rgb, rgb < 0, 0)
     return (rgb)
 
-img1 = rgb2ycbcr(img0) #transforms img0 so I can work with YCbCr data
+img1 = rgb2ycbcr(img0) 
 Y = img1[:,:,0] 
 Cb = img1[:,:,1] 
 Cr = img1[:,:,2] 
